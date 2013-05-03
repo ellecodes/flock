@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search for a Company</title>
+        <link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <form method="POST", action ="">
+            {{ form.hidden_tag() }}
+            <h2>Search by Company Name</h2>
+            {{form.email}} <input type='submit', value="Search"></input> <br><br>
+            <h4>Search results for "twitter for birds"</h4>
+            <a href="http://localhost:5000/company-rate">Twitter for Birds</a><br><br>
+            Not the company you were searching for? <a href="http://localhost:5000/company-add">Add a company</a>
+            </form>
+        </div> 
+    </body>
+</html>

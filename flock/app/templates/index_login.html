@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flock</title>
+        <link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+           <form method="POST", action ="">
+            {{form.hidden_tag()}}
+           	Email <br>{{form.email}} <br>
+            Password <br>{{form.password}}
+            <a href="http://localhost:5000/home"><input type='submit', value="Sign In"></input></a> <br>
+            No account? <a href="http://localhost:5000/join-create">Join now</a>
+           </form>
+        </div> 
+    </body>
+</html>
+
