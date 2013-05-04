@@ -5,6 +5,7 @@
 *.db
 /flask
 /wireframes
+/flock/tmp
 virtualenv.py
 
 # C extensions
