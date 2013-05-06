@@ -12,11 +12,11 @@ class EditForm(Form):
     location = TextField('location', validators = [])
     about_me = TextAreaField('about_me', validators = [Length(min = 0, max = 140)])
 
-class CreateCoForm(Form):
+class AddCoForm(Form):
     name = TextField('name', validators = [Required()])
     url = TextField('url', validators = [Required()])
     location = TextField('location', validators = [Required()])
-    service = TextField('service', validators = [Required()])
+    service = TextField('service', validators = [])
     industry = TextField('industry', validators = [Required()])
 
 class RateCoForm(Form):

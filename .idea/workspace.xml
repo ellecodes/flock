@@ -8,6 +8,13 @@
     <file path="/company_rate.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367091831988" ignored="false" />
     <file path="/a.dummy" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367092624036" ignored="false" />
     <file path="/user_join_create.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367270022135" ignored="false" />
+    <file path="/views.py" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367735782579" ignored="false" />
+    <file path="/company.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367718633005" ignored="false" />
+    <file path="/colist.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367732972055" ignored="false" />
+    <file path="/dummy.xml" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367719109008" ignored="false" />
+    <file path="/companylist.css" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367731612479" ignored="false" />
+    <file path="/company_add.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367732813507" ignored="false" />
+    <file path="/forms.py" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367733497098" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,30 +34,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controller_tipsy.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tipsy_part2/controller_tipsy.py">
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flock/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="4" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#44#115#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="company_rate.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tipsy_part2/templates/company_rate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="23" selection-start="304" selection-end="308" vertical-scroll-proportion="-6.25">
+            <state line="19" column="22" selection-start="710" selection-end="710" vertical-scroll-proportion="0.7758621">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tipsy_part2/model.py">
+      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flock/app/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="21" selection-start="214" selection-end="220" vertical-scroll-proportion="0.39473686">
+            <state line="19" column="63" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flock/app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="0" selection-start="2472" selection-end="2472" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="colist.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flock/app/templates/colist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="13" selection-start="989" selection-end="989" vertical-scroll-proportion="-4.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flock/app/templates/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="35" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company_add.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flock/app/templates/company_add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="41" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rating.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flock/app/templates/rating.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="25" selection-start="53" selection-end="53" vertical-scroll-proportion="1.0">
               <folding />
             </state>
           </provider>
@@ -69,14 +110,23 @@
         <option value="$PROJECT_DIR$/tipsy_part2/templates/company_rate.html" />
         <option value="$PROJECT_DIR$/tipsy_part2/controller_tipsy.py" />
         <option value="$PROJECT_DIR$/tipsy_part2/templates/user_join_create.html" />
+        <option value="$PROJECT_DIR$/flock/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/flock/app/templates/company.html" />
+        <option value="$PROJECT_DIR$/flock/app/templates/companylist.css" />
+        <option value="$PROJECT_DIR$/flock/app/templates/login.html" />
+        <option value="$PROJECT_DIR$/flock/app/static/css/flat-ui.css" />
+        <option value="$PROJECT_DIR$/flock/app/static/css/companylist.css" />
+        <option value="$PROJECT_DIR$/flock/app/templates/company_add.html" />
+        <option value="$PROJECT_DIR$/flock/app/forms.py" />
+        <option value="$PROJECT_DIR$/flock/app/templates/colist.html" />
+        <option value="$PROJECT_DIR$/flock/app/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="178" />
     <option name="y" value="22" />
-    <option name="width" value="1559" />
-    <option name="height" value="778" />
+    <option name="width" value="1366" />
+    <option name="height" value="673" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -104,6 +154,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -118,11 +169,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Flock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tipsy_part2" />
+              <option name="myItemId" value="flock" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -132,11 +179,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Flock" />
+              <option name="myItemId" value="flock" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tipsy_part2" />
+              <option name="myItemId" value="flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -150,24 +233,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flock/run.py" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tipsy_part2/controller_tipsy.py" />
-    <property name="options.searchVisible" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -177,7 +299,12 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.tipsy_controller">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flock/app/static/css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run.py">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -197,25 +324,25 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <configuration default="false" name="tipsy_controller" type="PythonConfigurationType" factoryName="Python">
+    <configuration default="false" name="run.py" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/tipsy_part2/env/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tipsy_part2" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/flask/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flock" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Flock" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tipsy_part2/controller_tipsy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flock/run.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -224,7 +351,7 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Python.tipsy_controller" />
+      <item index="0" class="java.lang.String" itemvalue="Python.run.py" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -254,27 +381,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="178" y="22" width="1559" height="778" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1366" height="673" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="152" y="130" width="1028" height="560" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3206687" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24957699" sideWeight="0.6703125" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19497687" sideWeight="0.6793313" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23333333" sideWeight="0.67992765" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3890625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4703125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32007232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="152" y="130" width="1028" height="560" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3206687" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -340,41 +467,96 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tipsy_part2/controller_tipsy.py">
+    <entry file="file://$PROJECT_DIR$/flock/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="4" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#44#115#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tipsy_part2/templates/company_rate.html">
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="304" selection-end="308" vertical-scroll-proportion="-6.25">
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/static/css/flat-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1064" column="21" selection-start="30413" selection-end="30413" vertical-scroll-proportion="0.33216783" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="25" selection-start="515" selection-end="515" vertical-scroll-proportion="0.15282393" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/static/css/companylist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="1" selection-start="154" selection-end="154" vertical-scroll-proportion="0.6" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="8" selection-start="217" selection-end="217" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/company.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="14" selection-start="420" selection-end="420" vertical-scroll-proportion="0.44850498" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="762" selection-end="774" vertical-scroll-proportion="0.80246913" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="63" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tipsy_part2/env/lib/python2.6/site-packages/wtforms/form.py">
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="8" selection-start="8331" selection-end="8331" vertical-scroll-proportion="0.33333334">
+        <state line="21" column="35" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tipsy_part2/forms.py">
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/company_add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#92#0" expanded="true" />
-          </folding>
+        <state line="26" column="41" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tipsy_part2/model.py">
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/rating.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="214" selection-end="220" vertical-scroll-proportion="0.39473686">
+        <state line="1" column="25" selection-start="53" selection-end="53" vertical-scroll-proportion="1.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/colist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="13" selection-start="989" selection-end="989" vertical-scroll-proportion="-4.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="0" selection-start="2472" selection-end="2472" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="22" selection-start="710" selection-end="710" vertical-scroll-proportion="0.7758621">
           <folding />
         </state>
       </provider>

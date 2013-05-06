@@ -1,0 +1,10 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{company.name}}</h1>
+{% if company.url %}<p><i>{{company.url}}</i></p>{% endif %}
+{% if company.location %}<p><i>Location: {{company.location}}</i></p>{% endif %}
+{% if company.industry %}<p><i>Industry: {{company.industry}}</i></p>{% endif %}
+{% if company.service %}<p><i>Description: {{company.service}}</i></p>{% endif %}
+{% endblock %}

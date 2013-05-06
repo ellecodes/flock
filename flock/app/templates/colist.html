@@ -1,5 +1,41 @@
 <html>
-{% for c in companies %}
-<h2>{{ c.id }} {{ c.name }}</h2>
-{% endfor %}
+<link rel="stylesheet" href="/static/css/flat-ui.css" type="text/css">
+<link rel="stylesheet" href="/static/css/companylist.css" type="text/css">
+  <head>
+    {% if title %}
+    <title>{{title}} - Flock</title>
+    {% else %}
+    <title>Flock</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Flock:
+        <a href="{{ url_for('index') }}">Home</a>
+        {% if g.user.is_authenticated() %}
+        | <a href="{{ url_for('user', nickname = g.user.nickname) }}">Your Profile</a>
+        | <a href="{{ url_for('logout') }}">Logout</a>
+        {% endif %}
+    </div>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+    {% for message in messages %}
+        <li>{{ message }} </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <h1>Companies</h1>
+        <li>
+            {% for c in companies %}
+            <h6><a href="/company/{{c.id}}">{{ c.name }}</a></h6>
+            <p>Location: {{ c.location }}</p>
+        </li>
+        {% endfor %}
+        <li>
+            <p>Don't see a company listed? <a href="/company_add">Add it here</a></h6>
+        </li>
+    </ul>
+</body>
 </html>

@@ -1,7 +1,7 @@
 from flask import render_template, flash, redirect, session, url_for, request, g
 from flask.ext.login import login_user, logout_user, current_user, login_required
 from app import app, db, lm, oid, models
-from forms import LoginForm, EditForm, RateCoForm
+from forms import LoginForm, EditForm, AddCoForm, RateCoForm
 from models import User, ROLE_USER, ROLE_ADMIN, Company, Rating
 from datetime import datetime
 
@@ -77,7 +77,7 @@ def logout():
     return redirect(url_for('index'))
 
 @app.route('/user/<nickname>')
-@login_required
+# @login_required
 def user(nickname):
     user = User.query.filter_by(nickname = nickname).first()
     if user == None:
@@ -92,7 +92,7 @@ def user(nickname):
         posts = posts)
 
 @app.route('/edit', methods = ['GET', 'POST'])
-@login_required
+# @login_required
 def edit():
     form = EditForm()
     if form.validate_on_submit():
@@ -114,13 +114,42 @@ def edit():
     return render_template('edit.html',
         form = form)
 
+@app.route("/companies")
+# @login_required
+def colists():
+    companies = models.Company.query.all()
+    return render_template("colist.html", companies=companies)
+
+@app.route('/company/<id>')
+# @login_required
+def company(id):
+    company = Company.query.filter_by(id = id).first()
+    if company == None:
+        flash('Company ' + id + ' not found.')
+        return redirect(url_for('index'))
+    return render_template('company.html',
+        company = company)
+
+@app.route('/company_add', methods = ['GET', 'POST'])
+# @login_required
+def company_add():
+    form = AddCoForm()
+    if form.validate_on_submit():
+        newco = Company(name = form.name.data, url = form.url.data, location = form.location.data, service = form.service.data, industry = form.industry.data)
+        db.session.add(newco)
+        db.session.commit()
+        flash('Company has been added.')
+        return redirect(url_for('colists'))
+    return render_template('company_add.html',
+        form = form)
+
 @app.route('/rating', methods = ['GET', 'POST'])
-@login_required
+# @login_required
 def rating():
     form = RateCoForm()
     if form.validate_on_submit():
-        g.user.ratings.company_id = form.company_id.data
-        g.user.ratings.user_id = form.user_id.data
+        # g.user.ratings.company_id = form.company_id.data
+        # g.user.ratings.user_id = form.user_id.data
         g.user.ratings.WFH = form.WFH.data
         g.user.ratings.PTO = form.PTO.data
         g.user.ratings.Benefits = form.Benefits.data
@@ -130,12 +159,12 @@ def rating():
         flash('Your ratings have been saved.')
         return redirect(url_for('rating')) 
     else:
-        form.company_id.data = g.user.ratings.company_id
-        form.user_id.data = g.user.ratings.user_id
+        # form.company_id.data = g.user.ratings.company_id
+        # form.user_id.data = g.user.ratings.user_id
         form.WFH.data = g.user.ratings.WFH
         form.PTO.data = g.user.ratings.PTO
         form.Benefits.data = g.user.ratings.Benefits
-        fform.Collaboration.data = g.user.ratings.Collaboration
+        form.Collaboration.data = g.user.ratings.Collaboration
     return render_template('rating.html', #change edit
         form = form)
 
