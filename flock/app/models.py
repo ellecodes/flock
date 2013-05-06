@@ -59,10 +59,7 @@ class Rating(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     company_id = db.Column(db.Integer, db.ForeignKey('company.id'))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    WFH = db.Column(db.Integer)
-    PTO = db.Column(db.Integer)
-    Benefits = db.Column(db.Integer)
-    Collaboration = db.Column(db.Integer)
- 
+    rating = db.Column(db.Integer)
+
     def __repr__(self):
         return '<Rating %r>' % (self.rating)

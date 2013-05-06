@@ -77,7 +77,7 @@ def logout():
     return redirect(url_for('index'))
 
 @app.route('/user/<nickname>')
-# @login_required
+@login_required
 def user(nickname):
     user = User.query.filter_by(nickname = nickname).first()
     if user == None:
@@ -92,7 +92,7 @@ def user(nickname):
         posts = posts)
 
 @app.route('/edit', methods = ['GET', 'POST'])
-# @login_required
+@login_required
 def edit():
     form = EditForm()
     if form.validate_on_submit():
@@ -115,23 +115,31 @@ def edit():
         form = form)
 
 @app.route("/companies")
-# @login_required
-def colists():
+@login_required
+def colist():
     companies = models.Company.query.all()
     return render_template("colist.html", companies=companies)
 
-@app.route('/company/<id>')
-# @login_required
+@app.route('/company/<id>', methods = ['GET', 'POST'])
+@login_required
 def company(id):
+    form = RateCoForm()
+    user = g.user
     company = Company.query.filter_by(id = id).first()
-    if company == None:
-        flash('Company ' + id + ' not found.')
-        return redirect(url_for('index'))
+    if form.validate_on_submit():
+        corating = Rating(rating=form.rating.data, author=user, reader=company)
+        db.session.add(corating)
+        db.session.commit()
+        flash('Rating has been added.')
+        return redirect(url_for('colist'))
     return render_template('company.html',
-        company = company)
+        form = form,
+        company = company,
+        user = user)
+
 
 @app.route('/company_add', methods = ['GET', 'POST'])
-# @login_required
+@login_required
 def company_add():
     form = AddCoForm()
     if form.validate_on_submit():
@@ -139,33 +147,8 @@ def company_add():
         db.session.add(newco)
         db.session.commit()
         flash('Company has been added.')
-        return redirect(url_for('colists'))
+        return redirect(url_for('colist'))
     return render_template('company_add.html',
-        form = form)
-
-@app.route('/rating', methods = ['GET', 'POST'])
-# @login_required
-def rating():
-    form = RateCoForm()
-    if form.validate_on_submit():
-        # g.user.ratings.company_id = form.company_id.data
-        # g.user.ratings.user_id = form.user_id.data
-        g.user.ratings.WFH = form.WFH.data
-        g.user.ratings.PTO = form.PTO.data
-        g.user.ratings.Benefits = form.Benefits.data
-        g.user.ratings.Collaboration = form.Collaboration.data
-        db.session.add(g.user.ratings)
-        db.session.commit()
-        flash('Your ratings have been saved.')
-        return redirect(url_for('rating')) 
-    else:
-        # form.company_id.data = g.user.ratings.company_id
-        # form.user_id.data = g.user.ratings.user_id
-        form.WFH.data = g.user.ratings.WFH
-        form.PTO.data = g.user.ratings.PTO
-        form.Benefits.data = g.user.ratings.Benefits
-        form.Collaboration.data = g.user.ratings.Collaboration
-    return render_template('rating.html', #change edit
         form = form)
 
 
@@ -182,11 +165,6 @@ def rating():
 def userslist():
     users = models.User.query.all()
     return render_template("user_list.html", users=users)
-
-@app.route("/companies")
-def colists():
-    companies = models.Company.query.all()
-    return render_template("colist.html", companies=companies)
 
 
 # @app.route("/join")

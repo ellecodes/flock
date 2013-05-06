@@ -49,3 +49,30 @@ db.session.add(w)
 db.session.add(x)
 db.session.add(y)
 db.session.commit()
+
+
+u = models.User.query.get(1)
+c = models.Company.query.get(1)
+r = models.Rating(rating=5, author=u, reader=c)
+db.session.add(r)
+db.session.commit()
+
+u = models.User.query.get(1)
+print u
+ratings = u.ratings.all()
+print ratings
+
+for r in ratings:
+	print r.id, r.author.nickname, r.reader.name, r.rating
+
+>>> from app import db, models
+>>> u = models.User.query.get(1)
+>>> c = models.Company.query.get(2)
+>>> r = models.Rating(rating=5, author=u, reader=c)
+>>> db.session.add(r)
+>>> db.session.commit()
+>>> 
+>>> ratings = u.ratings.all()
+>>> for r in ratings:
+...     print r.author.nickname, r.reader.name, r.rating
+.

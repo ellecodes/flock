@@ -3,24 +3,12 @@
 
 {% block content %}
 <h1>Rate this company</h1>
-<form action="/rating" method="post" name="rating">
+<form action="/company/<id>/rate" method="post" name="company/<id>/rate">
     {{form.hidden_tag()}}
     <table>
         <tr>
-            <td>Work from home:</td>
-            <td>{{form.WFH(size = 24)}}</td>
-        </tr>
-        <tr>
-            <td>Paid Time Off:</td>
-            <td>{{form.PTO(size = 24)}}</td>
-        </tr>
-        <tr>
-            <td>Benefits:</td>
-            <td>{{form.benefits(size = 24)}}</td>
-        </tr>
-        <tr>
-            <td>Collaboration:</td>
-            <td>{{form.collaboration(size = 24)}}</td>
+            <td>Rating:</td>
+            <td>{{form.rating(size = 24)}}</td>
         </tr>
         <tr>
             <td></td>

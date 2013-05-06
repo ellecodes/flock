@@ -7,4 +7,18 @@
 {% if company.location %}<p><i>Location: {{company.location}}</i></p>{% endif %}
 {% if company.industry %}<p><i>Industry: {{company.industry}}</i></p>{% endif %}
 {% if company.service %}<p><i>Description: {{company.service}}</i></p>{% endif %}
+<h1>Rate this company</h1>
+<form action="/company/{{company.id}}" method="post" name="company/{{company.id}}>">
+    {{form.hidden_tag()}}
+    <table>
+        <tr>
+            <td>Rating:</td>
+            <td>{{form.rating(size = 24)}}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Save Changes"></td>
+        </tr>
+    </table>
+</form>
 {% endblock %}

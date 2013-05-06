@@ -8,13 +8,15 @@
     <file path="/company_rate.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367091831988" ignored="false" />
     <file path="/a.dummy" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367092624036" ignored="false" />
     <file path="/user_join_create.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367270022135" ignored="false" />
-    <file path="/views.py" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367735782579" ignored="false" />
-    <file path="/company.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367718633005" ignored="false" />
+    <file path="/views.py" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367824216139" ignored="false" />
+    <file path="/company.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367817402464" ignored="false" />
     <file path="/colist.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367732972055" ignored="false" />
     <file path="/dummy.xml" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367719109008" ignored="false" />
     <file path="/companylist.css" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367731612479" ignored="false" />
     <file path="/company_add.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367732813507" ignored="false" />
-    <file path="/forms.py" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367733497098" ignored="false" />
+    <file path="/forms.py" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367806700752" ignored="false" />
+    <file path="/models.py" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367806717640" ignored="false" />
+    <file path="/rating.html" changelist="34bb3b49-5cc3-4439-beb2-2cbb6bc94dc9" time="1367813323016" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +36,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flock/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="710" selection-end="710" vertical-scroll-proportion="0.7758621">
-              <folding />
+            <state line="16" column="22" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,8 +50,10 @@
       <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flock/app/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="63" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="22" column="59" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#70#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,16 +61,18 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flock/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="2472" selection-end="2472" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="128" column="33" selection-start="4074" selection-end="4074" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#80#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="colist.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flock/app/templates/colist.html">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flock/app/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="13" selection-start="989" selection-end="989" vertical-scroll-proportion="-4.75">
+            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -73,16 +81,25 @@
       <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flock/app/templates/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="35" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
+            <state line="21" column="35" selection-start="561" selection-end="561" vertical-scroll-proportion="-4.1666665">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="company_add.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flock/app/templates/company_add.html">
+      <file leaf-file-name="user.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flock/app/templates/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="41" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="colist.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flock/app/templates/colist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="13" selection-start="989" selection-end="989" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
@@ -91,7 +108,16 @@
       <file leaf-file-name="rating.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flock/app/templates/rating.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="25" selection-start="53" selection-end="53" vertical-scroll-proportion="1.0">
+            <state line="7" column="11" selection-start="213" selection-end="213" vertical-scroll-proportion="-2.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flock/app/templates/company.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="29" selection-start="627" selection-end="627" vertical-scroll-proportion="-4.75">
               <folding />
             </state>
           </provider>
@@ -111,14 +137,16 @@
         <option value="$PROJECT_DIR$/tipsy_part2/controller_tipsy.py" />
         <option value="$PROJECT_DIR$/tipsy_part2/templates/user_join_create.html" />
         <option value="$PROJECT_DIR$/flock/app/templates/base.html" />
-        <option value="$PROJECT_DIR$/flock/app/templates/company.html" />
         <option value="$PROJECT_DIR$/flock/app/templates/companylist.css" />
         <option value="$PROJECT_DIR$/flock/app/templates/login.html" />
         <option value="$PROJECT_DIR$/flock/app/static/css/flat-ui.css" />
         <option value="$PROJECT_DIR$/flock/app/static/css/companylist.css" />
         <option value="$PROJECT_DIR$/flock/app/templates/company_add.html" />
-        <option value="$PROJECT_DIR$/flock/app/forms.py" />
         <option value="$PROJECT_DIR$/flock/app/templates/colist.html" />
+        <option value="$PROJECT_DIR$/flock/app/models.py" />
+        <option value="$PROJECT_DIR$/flock/app/templates/rating.html" />
+        <option value="$PROJECT_DIR$/flock/app/templates/company.html" />
+        <option value="$PROJECT_DIR$/flock/app/forms.py" />
         <option value="$PROJECT_DIR$/flock/app/views.py" />
       </list>
     </option>
@@ -467,11 +495,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flock/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flock/app/templates/post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="-0.0" />
@@ -487,11 +510,6 @@
         <state line="18" column="25" selection-start="515" selection-end="515" vertical-scroll-proportion="0.15282393" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flock/app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flock/app/static/css/companylist.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="1" selection-start="154" selection-end="154" vertical-scroll-proportion="0.6" />
@@ -502,61 +520,85 @@
         <state line="9" column="8" selection-start="217" selection-end="217" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flock/app/templates/company.html">
+    <entry file="file://$PROJECT_DIR$/flock/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="420" selection-end="420" vertical-scroll-proportion="0.44850498" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flock/app/templates/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="762" selection-end="774" vertical-scroll-proportion="0.80246913" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flock/app/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="63" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flock/app/templates/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flock/app/templates/company_add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="41" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flock/app/templates/rating.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="25" selection-start="53" selection-end="53" vertical-scroll-proportion="1.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flock/app/templates/colist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="989" selection-end="989" vertical-scroll-proportion="-4.75">
+        <state line="26" column="41" selection-start="716" selection-end="716" vertical-scroll-proportion="0.6018519">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flock/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2472" selection-end="2472" vertical-scroll-proportion="0.0">
+        <state line="128" column="33" selection-start="4074" selection-end="4074" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="59" selection-start="991" selection-end="991" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="35" selection-start="561" selection-end="561" vertical-scroll-proportion="-4.1666665">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flock/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="710" selection-end="710" vertical-scroll-proportion="0.7758621">
+        <state line="16" column="22" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/colist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="13" selection-start="989" selection-end="989" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/rating.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="213" selection-end="213" vertical-scroll-proportion="-2.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/company.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="29" selection-start="627" selection-end="627" vertical-scroll-proportion="-4.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flock/app/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>

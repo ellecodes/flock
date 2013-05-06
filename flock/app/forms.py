@@ -20,7 +20,4 @@ class AddCoForm(Form):
     industry = TextField('industry', validators = [Required()])
 
 class RateCoForm(Form):
-    WFH = TextField('WFH', validators = [Required(message='Required'), NumberRange(min=0, max=10, message='Must enter a number between 1 and 10')])
-    PTO = TextField('PTO', validators = [Required(message='Required'), NumberRange(min=0, max=10, message='Must enter a number between 1 and 10')])
-    Benefits = TextField('Benefits', validators = [Required(message='Required'), NumberRange(min=0, max=10, message='Must enter a number between 1 and 10')])
-    Collaboration = TextField('Collaboration', validators = [Required(message='Required'), NumberRange(min=0, max=10, message='Must enter a number between 1 and 10')])
+    rating = TextField('rating', validators = [Required()])
