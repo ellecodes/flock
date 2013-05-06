@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<title>Join</title>
+    <body>
+        <div class="container">
+           <form method="POST", action ="">
+           	{{form.hidden_tag()}}
+           	<h2>Get Started! Set Your Preferences</h2>
+            <h4>On a scale of 1 to 10, rate the following:</h4>
+            Work from Home: {{form.email}} <br>
+            Work from Home: {{form.email}} <br>
+            Work from Home: {{form.email}} <br>
+            Work from Home: {{form.email}} <br>
+            Work from Home: {{form.email}} <br>
+            Work from Home: {{form.email}} <br>
+            Work from Home: {{form.email}} <br>
+            Work from Home: {{form.email}} <br>
+            Work from Home: {{form.email}} <br>
+            Work from Home: {{form.email}} <br>
+            <br>
+            <br>
+            <h2>SAVE YOUR PREFERENCES </h2>
+            <h4>Sign up with your email:</h4>
+            <span style="padding-left: 20px; display:block"> First Name: <br>
+            {{form.email}} <br>
+            Last Name: <br> 
+            {{form.email}} <br>
+            Email: <br>
+            {{form.email}} <br>
+            Password: <br>
+            {{form.password}} <br>
+            <a href="http://localhost:5000/home"><input type='submit', value="Join Now"></input></a> <br>
+            </span>
+            </form>
+        </div> 
+    </body>
+{% endblock %}

@@ -38,7 +38,7 @@ def login():
     if form.validate_on_submit():
         session['remember_me'] = form.remember_me.data
         return oid.try_login(form.openid.data, ask_for = ['nickname', 'email'])
-    return render_template('login.html', 
+    return render_template('login.html',
         title = 'Sign In',
         form = form,
         providers = app.config['OPENID_PROVIDERS'])
@@ -111,14 +111,19 @@ def edit():
         form.gender.data = g.user.gender
         form.location.data = g.user.location
         form.about_me.data = g.user.about_me
-    return render_template('edit.html',
+    return render_template('user_edit.html',
         form = form)
 
 @app.route("/companies")
 @login_required
 def colist():
     companies = models.Company.query.all()
-    return render_template("colist.html", companies=companies)
+    return render_template("company_list.html", companies=companies)
+
+@app.route("/compatible_flocks")
+@login_required
+def compatible_flocks():
+    return render_template("under_construction.html")
 
 @app.route('/company/<id>', methods = ['GET', 'POST'])
 @login_required
@@ -132,11 +137,10 @@ def company(id):
         db.session.commit()
         flash('Rating has been added.')
         return redirect(url_for('colist'))
-    return render_template('company.html',
+    return render_template('company_rate.html',
         form = form,
         company = company,
         user = user)
-
 
 @app.route('/company_add', methods = ['GET', 'POST'])
 @login_required
@@ -160,34 +164,3 @@ def company_add():
 # def internal_error(error):
 #     db.session.rollback()
 #     return render_template('500.html'), 500
-
-@app.route("/users")
-def userslist():
-    users = models.User.query.all()
-    return render_template("user_list.html", users=users)
-
-
-# @app.route("/join")
-# def create_user():
-#     form = LoginForm()
-#     return render_template("join.html", user_name="chriszf", form = form)
-
-# @app.route("/company-search")
-# def search_company():
-#     form = LoginForm()
-#     return render_template("company_search.html", user_name="chriszf", form = form)
-
-# @app.route("/company-add")
-# def add_company():  
-#     form = LoginForm()
-#     return render_template("company_add.html", user_name="chriszf", form = form)
-
-# @app.route("/company-rate")
-# def rate_company():
-#     form = LoginForm()
-#     return render_template("company_rate.html", user_name="chriszf", form = form)
-
-# @app.route("/home")
-# def home_user():
-#     form = LoginForm()
-#     return render_template("user_home.html", user_name="chriszf", form = form)
