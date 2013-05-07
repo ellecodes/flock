@@ -9,13 +9,20 @@
 {% if company.service %}<p><i>Description: {{company.service}}</i></p>{% endif %}
 </div>
 <div><br><h3>Rate this company</h3>
-<form action="/company/{{company.id}}" method="post" name="company/{{company.id}}>">
+<form action="/company/{{company.id}}" method="post">
     {{form.hidden_tag()}}
-    <table>
+ <table>
+     {% for value_form in form.value_ratings %}
         <tr>
-            <td>Rating:</td>
-            <td>{{form.rating(size = 2)}}</td>
+            <td>{{ value_form.value_name.data }}</td>
+            <td>
+                {{ value_form.value_rating(size=2) }}
+                {{ value_form.value_id }}
+                {{ value_form.value_name }}
+
+            </td>
         </tr>
+     {% endfor %}
         <tr>
             <td></td>
             <td><input type="submit" value="Submit Ratings"></td>

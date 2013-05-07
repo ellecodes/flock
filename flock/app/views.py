@@ -2,7 +2,7 @@ from flask import render_template, flash, redirect, session, url_for, request, g
 from flask.ext.login import login_user, logout_user, current_user, login_required
 from app import app, db, lm, oid, models
 from forms import LoginForm, EditForm, AddCoForm, RateCoForm
-from models import User, ROLE_USER, ROLE_ADMIN, Company, Rating
+from models import User, ROLE_USER, ROLE_ADMIN, Company, Rating, Value
 from datetime import datetime
 
 @lm.user_loader
@@ -130,17 +130,34 @@ def compatible_flocks():
 def company(id):
     form = RateCoForm()
     user = g.user
+    values = Value.query.all()
     company = Company.query.filter_by(id = id).first()
     if form.validate_on_submit():
-        corating = Rating(rating=form.rating.data, author=user, reader=company)
-        db.session.add(corating)
+        for v in form.value_ratings:
+            print v.value_id.data, v.value_rating.data
+            corating = db.session.query(Rating).filter_by(author=user, reader=company, value_id = v.value_id.data).first()
+            print "Got the rating from the db", corating
+
+            if not corating:
+                corating = Rating(author=user, reader=company, value_id = v.value_id.data)
+                db.session.add(corating)
+
+            print "ORIGINAL, NEW", corating.rating, v.value_rating.data
+            corating.rating = v.value_rating.data
+
         db.session.commit()
         flash('Rating has been added.')
         return redirect(url_for('colist'))
+    if request.method == "GET":
+        for v in values:
+            form.value_ratings.append_entry({"value_id": v.id,
+                                             "value_name": v.name})
+
     return render_template('company_rate.html',
         form = form,
-        company = company,
-        user = user)
+        user = user,
+        values = values,
+        company = company)
 
 @app.route('/company_add', methods = ['GET', 'POST'])
 @login_required

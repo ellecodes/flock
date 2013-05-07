@@ -16,6 +16,16 @@ class User(db.Model):
     age = db.Column(db.Integer, nullable = True)
     gender = db.Column(db.String(64), nullable = True)
     location = db.Column(db.String(64))
+    # value_1 = db.Column(db.Integer, nullable = True)
+    # value_2 = db.Column(db.Integer, nullable = True)
+    # value_3 = db.Column(db.Integer, nullable = True)
+    # value_4 = db.Column(db.Integer, nullable = True)
+    # value_5 = db.Column(db.Integer, nullable = True)
+    # value_6 = db.Column(db.Integer, nullable = True)
+    # value_7 = db.Column(db.Integer, nullable = True)
+    # value_8 = db.Column(db.Integer, nullable = True)
+    # value_9 = db.Column(db.Integer, nullable = True)
+    # value_10 = db.Column(db.Integer, nullable = True)
 
     def is_authenticated(self):
         return True
@@ -47,18 +57,19 @@ class Company(db.Model):
     def __repr__(self):
         return '<Company %r>' % (self.name)
 
-# class Value(db.Model):
-#     id = db.Column(db.Integer, primary_key = True)
-#     name = db.Column(db.String(64))
-#     ratings = db.relationship('Rating', backref = 'subject', lazy = 'dynamic')
+class Value(db.Model):
+    id = db.Column(db.Integer, primary_key = True)
+    name = db.Column(db.String(64))
+    ratings = db.relationship('Rating', backref = 'subject', lazy = 'dynamic')
  
-#     def __repr__(self):
-#         return '<Value %r>' % (self.name)
+    def __repr__(self):
+        return '<Value %r>' % (self.name)
 
 class Rating(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     company_id = db.Column(db.Integer, db.ForeignKey('company.id'))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    value_id = db.Column(db.Integer, db.ForeignKey('value.id'))
     rating = db.Column(db.Integer)
 
     def __repr__(self):

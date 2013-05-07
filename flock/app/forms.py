@@ -1,5 +1,6 @@
 from flask.ext.wtf import Form, TextField, BooleanField, TextAreaField
-from flask.ext.wtf import Required, Length, NumberRange
+from flask.ext.wtf import Required, Length, NumberRange, HiddenField, IntegerField, FieldList, FormField
+import wtforms
 
 class LoginForm(Form):
     openid = TextField('openid', validators = [Required()])
@@ -19,5 +20,11 @@ class AddCoForm(Form):
     service = TextField('service', validators = [])
     industry = TextField('industry', validators = [Required()])
 
+class ValueRatingForm(wtforms.Form):
+    value_id = HiddenField()
+    value_rating = IntegerField()
+    value_name = HiddenField(validators=[Required(False)])
+
 class RateCoForm(Form):
-    rating = TextField('rating', validators = [Required()])
+    value_ratings = FieldList(FormField(ValueRatingForm))
+
