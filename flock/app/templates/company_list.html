@@ -1,20 +1,26 @@
 <html>
-<link rel="stylesheet" href="/static/css/flat-ui.css" type="text/css">
-<link rel="stylesheet" href="/static/css/companylist.css" type="text/css">
   <head>
-    {% if title %}
-    <title>{{title}} - Flock</title>
-    {% else %}
-    <title>Flock</title>
-    {% endif %}
+      <link rel="stylesheet" href="/static/css/flat-ui.css" type="text/css">
+      <link rel="stylesheet" href="/static/css/main.css" type="text/css">
+      <link rel="stylesheet" href="/static/css/companylist.css" type="text/css">
+      <link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' rel='stylesheet' type='text/css'>
+      {% if title %}
+      <title>{{title}} - Flock</title>
+      {% else %}
+      <title>Flock</title>
+      {% endif %}
   </head>
   <body>
-    <div>Flock:
-        <a href="{{ url_for('index') }}">Home</a>
-        {% if g.user.is_authenticated() %}
-        | <a href="{{ url_for('user', nickname = g.user.nickname) }}">Your Profile</a>
-        | <a href="{{ url_for('logout') }}">Logout</a>
-        {% endif %}
+    <div id='header'>
+        <img src="./static/img/birds-of-a-feather.jpg" alt="flock" width="125" height="121">
+        <h1>Flock</h1>
+        <span id='navigation'>
+            <a href="{{ url_for('index') }}">Home</a>
+            {% if g.user.is_authenticated() %}
+            | <a href="{{ url_for('user', nickname = g.user.nickname) }}">Your Profile</a>
+            | <a href="{{ url_for('logout') }}">Logout</a>
+            {% endif %}
+        </span>
     </div>
     <hr>
     {% with messages = get_flashed_messages() %}

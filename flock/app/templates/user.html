@@ -2,23 +2,40 @@
 {% extends "base.html" %}
 
 {% block content %}
+<body>
 <table>
     <tr valign="top">
         <td><img src="{{user.avatar(128)}}"></td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>
-            <h1>User: {{user.nickname}}</h1>
-            {% if user.age %}<p>{{user.age}}</p>{% endif %}
-            {% if user.gender %}<p>{{user.gender}}</p>{% endif %}
-            {% if user.location %}<p>{{user.location}}</p>{% endif %}
-            {% if user.about_me %}<p>{{user.about_me}}</p>{% endif %}
+            <h1>User Profile</h1>{% if user.id == g.user.id %}<p><a href="{{url_for('edit')}}">Edit</a></p>{% endif %}
+            Username: {{user.nickname}}
+            {% if user.age %}<p>Age: {{user.age}}</p>{% endif %}
+            {% if user.gender %}<p>Gender: {{user.gender}}</p>{% endif %}
+            {% if user.location %}<p>Location: {{user.location}}</p>{% endif %}
+            {% if user.about_me %}<p>About me: {{user.about_me}}</p>{% endif %}
             {% if user.last_seen %}<p><i>Last seen on: {{user.last_seen}}</i></p>{% endif %}
-            {% if user.id == g.user.id %}<p><a href="{{url_for('edit')}}">Edit</a></p>{% endif %}
+            <h3>Preferences</h3>
+            {% if user.val_collaboration %}<p>Collaboration: {{user.val_collaboration}}</p>{% endif %}
+            {% if user.val_competitive_pay %}<p>Competitive pay: {{user.vval_competitive_pay}}</p>{% endif %}
+            {% if user.val_empowerment %}<p>Empowerment: {{user.val_empowerment}}</p>{% endif %}
+            {% if user.val_flex_sched %}<p>Flexible schedule: {{user.val_flex_sched}}</p>{% endif %}
+            {% if user.val_advancement_opps %}<p>Advancment opportunities: {{user.val_advancement_opps}}</p>{% endif %}
+            {% if user.val_honesty %}<p>Honesty: {{user.val_honesty}}</p>{% endif %}
+            {% if user.val_innovation %}<p>Innovation: {{user.val_innovation}}</p>{% endif %}
+            {% if user.val_medical_benefits %}<p>Medical benefits: {{user.val_medical_benefits}}</p>{% endif %}
+            {% if user.val_mentoring %}<p>Mentoring: {{user.val_mentoring}}</p>{% endif %}
+            {% if user.val_paid_time_off %}<p>Paid time off: {{user.val_paid_time_off}}</p>{% endif %}
+            {% if user.val_performance_feedback %}<p>Performance feedback: {{user.val_performance_feedback}}</p>{% endif %}
+            {% if user.val_results_driven %}<p>Results-driven: {{user.val_results_driven}}</p>{% endif %}
+            {% if user.val_retirement %}<p>Retirement planning: {{user.val_retirement}}</p>{% endif %}
+            {% if user.val_training_development %}<p>Training & development: {{user.val_training_development}}</p>{% endif %}
+            {% if user.val_work_from_home %}<p>Work from home option: {{user.val_work_from_home}}</p>{% endif %}
         </td>
     </tr>
 </table>
-<!--<hr>-->
-<!--{% for post in posts %}-->
-    <!--{% include 'inactive_post.html' %}-->
-<!--{% endfor %}-->
+</body>
 {% endblock %}
 

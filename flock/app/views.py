@@ -14,20 +14,9 @@ def load_user(id):
 @login_required
 def index():
     user = g.user
-    posts = [
-        { 
-            'author': { 'nickname': 'John' }, 
-            'body': 'Beautiful day in Portland!' 
-        },
-        { 
-            'author': { 'nickname': 'Susan' }, 
-            'body': 'The Avengers movie was so cool!' 
-        }
-    ]
     return render_template('index.html',
         title = 'Home',
-        user = user,
-        posts = posts)
+        user = user)
 
 @app.route('/login', methods = ['GET', 'POST'])
 @oid.loginhandler
@@ -101,6 +90,21 @@ def edit():
         g.user.gender = form.gender.data
         g.user.location = form.location.data
         g.user.about_me = form.about_me.data
+        g.user.val_collaboration = form.val_collaboration.data
+        g.user.val_competitive_pay = form.val_competitive_pay.data
+        g.user.val_empowerment = form.val_empowerment.data
+        g.user.val_flex_sched = form.val_flex_sched.data
+        g.user.val_advancement_opps = form.val_advancement_opps.data
+        g.user.val_honesty = form.val_honesty.data
+        g.user.val_innovation = form.val_innovation.data
+        g.user.val_medical_benefits = form.val_medical_benefits.data
+        g.user.val_mentoring = form.val_mentoring.data
+        g.user.val_paid_time_off = form.val_paid_time_off.data
+        g.user.val_performance_feedback = form.val_performance_feedback.data
+        g.user.val_results_driven = form.val_results_driven.data
+        g.user.val_retirement = form.val_retirement.data
+        g.user.val_training_development = form.val_training_development.data
+        g.user.val_work_from_home = form.val_work_from_home.data
         db.session.add(g.user)
         db.session.commit()
         flash('Your changes have been saved.')
@@ -111,6 +115,21 @@ def edit():
         form.gender.data = g.user.gender
         form.location.data = g.user.location
         form.about_me.data = g.user.about_me
+        form.val_collaboration.data = g.user.val_collaboration
+        form.val_competitive_pay.data = g.user.val_competitive_pay
+        form.val_empowerment.data = g.user.val_empowerment
+        form.val_flex_sched.data = g.user.val_flex_sched
+        form.val_advancement_opps.data = g.user.val_advancement_opps
+        form.val_honesty.data = g.user.val_honesty
+        form.val_innovation.data = g.user.val_innovation
+        form.val_medical_benefits.data = g.user.val_medical_benefits
+        form.val_mentoring.data = g.user.val_mentoring
+        form.val_paid_time_off.data = g.user.val_paid_time_off
+        form.val_performance_feedback.data = g.user.val_performance_feedback
+        form.val_results_driven.data = g.user.val_results_driven
+        form.val_retirement.data = g.user.val_retirement
+        form.val_training_development.data = g.user.val_training_development
+        form.val_work_from_home.data = g.user.val_work_from_home
     return render_template('user_edit.html',
         form = form)
 

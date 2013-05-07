@@ -1,0 +1,25 @@
+#header h1 {
+    display: inline;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 75px;
+    margin-left: 20px;
+    margin: 0px 0px 0px 0px;
+    display: inline;
+    width: 189px;
+    position: relative;
+    top: -32px;
+    left: 20px;
+}
+
+#navigation  {
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+body  {
+    margin-left: 30px;
+    margin-top: 30px;
+    background-image: url("../img/whitey.png")
+}

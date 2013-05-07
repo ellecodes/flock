@@ -7,7 +7,7 @@
     {{form.hidden_tag()}}
     <table>
         <tr>
-            <td>Your nickname:</td>
+            <td>Your username:</td>
             <td>{{form.nickname(size = 24)}}</td>
         </tr>
         <tr>
@@ -20,14 +20,80 @@
         </tr>
         <tr>
             <td>Your location:</td>
-            <td>{{form.location(size = 24)}}</td>
+            <td>{{form.location(size = 32)}}</td>
         </tr>
         <tr>
             <td>About yourself:</td>
             <td>{{form.about_me(cols = 32, rows = 4)}}</td>
         </tr>
         <tr>
-            <td></td>
+            <td><input type="submit" value="Save Changes"></td>
+        </tr>
+        <tr>
+            <td><h3>Set Your Preferences</h3></td>
+            <td>On a scale of 1 to 10, please rate the following:  [1 = least important; 10 = most important]</td>
+        </tr>
+        <tr>
+            <td>Collaborative teams:</td>
+            <td>{{form.val_collaboration(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Competitive pay:</td>
+            <td>{{form.val_competitive_pay(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Empowerment:</td>
+            <td>{{form.val_empowerment(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Flexible schedule:</td>
+            <td>{{form.val_flex_sched(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Advancement opportunities:</td>
+            <td>{{form.val_advancement_opps(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Honesty:</td>
+            <td>{{form.val_honesty(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Innovation:</td>
+            <td>{{form.val_innovation(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Medical benefits:</td>
+            <td>{{form.val_medical_benefits(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Mentoring:</td>
+            <td>{{form.val_mentoring(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Paid time off:</td>
+            <td>{{form.val_paid_time_off(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Performance feedback:</td>
+            <td>{{form.val_performance_feedback(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Results-driven:</td>
+            <td>{{form.val_results_driven(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Retirement planning:</td>
+            <td>{{form.val_retirement(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Training & development:</td>
+            <td>{{form.val_training_development(size = 2)}}</td>
+        </tr>
+        <tr>
+            <td>Work from home flexibility:</td>
+            <td>{{form.val_work_from_home(size = 2)}}</td>
+        </tr>
+        <tr>
             <td><input type="submit" value="Save Changes"></td>
         </tr>
     </table>
